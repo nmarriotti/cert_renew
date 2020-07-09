@@ -9,7 +9,11 @@ The expiration date is checked regularly and based on a days remaining calculati
 The trigger is a value passed in that is used to determine when a new certificate should be generated. The default value is 14 days out from the current certificates expiration date.  
 
 ## Example ##
-![image](https://drive.google.com/file/d/1Ggvt7fKkqdCBpgg1TT0aNLywnwOGsOFU/view?usp=sharing)  
-![image](https://drive.google.com/file/d/1sFNdpew11x2NvhER9b328CDbpSQDT2sJ/view?usp=sharing)  
-![image](https://drive.google.com/file/d/1KK0aqhWrsAzmw-a3FQpbU695pwWZCYcF/view?usp=sharing)  
-![image](https://drive.google.com/file/d/13uFVKGWGQbCr5mhM0BLJHA2dvZwVHYL9/view?usp=sharing)  
+### Showing old certificate expiration ###
+![image](assets/before.png)  
+### Renewing certificate (I used a custom trigger of 365 days to force renewal) ###
+![image](assets/running.png)  
+### Verifying new certificate expiration ###
+![image](assets/after.png)  
+### Checking if certificate needs renewed again ###
+![image](assets/again.png)  
