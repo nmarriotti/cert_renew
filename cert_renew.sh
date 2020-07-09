@@ -28,7 +28,7 @@ today=`date +%s`
 expiration=`date -d "$expiration" "+%s"`
 days_remaining=$((($expiration-$today)/(60*60*24)))
 
-if [ $days_remaining -lt 365 ]; then
+if [ $days_remaining -lt $trigger ]; then
 	openssl req -new -days 730 -x509 -text -key $private_key -out $certificate -subj "/C=$Country/ST=$State/L=$Locality/O=$Org/CN=$CN"
 	echo "Self-signed certificate has been renewed!"
 	echo "Restarting httpd..."
